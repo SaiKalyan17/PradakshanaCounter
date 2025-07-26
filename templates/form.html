@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counter Form</title>
+</head>
+<body>
+    <h1>Landing Page Counter Form</h1>
+    <form method="POST">
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Count:</label><br>
+        <input type="number" name="count" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if message %}
+        <h3>{{ message }}</h3>
+    {% endif %}
+
+    <h4>Overall Total Count: {{ total }}</h4>
+</body>
+</html>
